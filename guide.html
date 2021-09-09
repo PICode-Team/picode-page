@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PICode</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header class="header-wrapper">
+      <div class="header-container">
+        <div class="header-content-wrapper">
+          <nav class="header-logo">
+            <img src="./image/picode-7.svg" alt="" />
+            <span>PICode</span>
+          </nav>
+          <ul class="header-content">
+            <li>
+              <a href="index.html">소개</a>
+            </li>
+            <li>
+              <a href="guide.html">가이드</a>
+            </li>
+            <li>
+              <a href="functions.html">기능</a>
+            </li>
+            <li>
+              <a href="api.html">문서</a>
+            </li>
+            <li>
+              <a href="https://github.com/PICode-Team">GitHub</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="content-wrapper">
+      <div class="content-container">
+        <div id="content"></div>
+      </div>
+    </section>
+    <footer class="footer-wrapper">
+      <div class="footer-container">
+        Copyright 2021. PICode all rights reseved
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+      const contentText = `# PICode
+
+### Project-Integrated COllaborative Development Environment
+
+## What is the PICode?
+
+
+If you have a problem in start, please visit our website and check guide!
+<>
+
+## How to start PICode extension?
+
+---
+
+1. Install all of our npm module on terminal ( npm i )
+2. Run the \`Run Extension target\` in the Debug View. This will:
+3. Start a task \`npm: watch\` to compile the code
+4. Run the extension in a new VS Code window
+
+
+If you have a problem in start, please visit our website and check guide!
+<>
+
+[Nevation](https://github.com/Nevation)
+[EunPyoLee1010](https://github.com/EunPyoLee1010)
+[benovice](https://github.com/benovice)
+[wlsrn3684](https://github.com/wlsrn3684)`;
+
+      document.getElementById("content").innerHTML = marked(contentText);
+    </script>
+  </body>
+</html>
